@@ -26,7 +26,7 @@ jobs:
       with:
         source_branch: 'main'
         release_branch: 'gh-pages'
-        hugo_build_options: '--gc --minify'
+        hugo_build_options: '--minify'
         # submodule_release_branch: 'subbed' <<only provide if you are publishing to directory with git submodule>>
         # full_rebuild: true
         # hugo_publish_directory: 'documents'   <<publish to another directory if needed>>
