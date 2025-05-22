@@ -19,14 +19,7 @@ jobs:
         extended: true
     
     - name: Checkout repo on source_branch
-      uses: actions/checkout@v3
-      with:
-        submodules: 'recursive'
-        # <<recommended if project uses git submodules for any purpose>>
-        # <<required if deploying to git submodule directory>>
-        fetch-depth: '0'
-        # <<fetch-depth: '0' currently required until shallow clone problems are solved>>
-        
+      uses: actions/checkout@v3      
     - name: Build site and push to release branch
       uses: aormsby/hugo-deploy-to-pages@v2.1
       id: build_step  # <<for outputs>>
