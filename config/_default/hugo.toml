@@ -12,27 +12,33 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "https://therkildsen-lab.github.io/galapagos_website/"
 publishDir = "public"
-
-# Remote
-#baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
-#publishDir = "//centos/sites/hugodev/hugostory/"
 
 
 ## -----------------------------------------------
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-disableKinds = ["taxonomy", "section"]
-# googleAnalytics = "G-XXXXXXXXXX"
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 ## -----------------------------------------------
 ## Site Parameters
 ## -----------------------------------------------
 
+
 [Params]
+  description = "The galapos sea cucumber project website"
+  logo = "images/banner.jpg"
+  favicon = true
 
 [Params.social]
+  github = "https://github.com/"
+  twitter = "https://twitter.com/"
+  email = "NAME at DOMAIN dot com"
+  instagram = "https://instagram.com/"
+  linkedin = "https://linkedin.com/in/"
 
 [Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]

@@ -12,12 +12,8 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "https://therkildsen-lab.github.io/galapagos_website/"
 publishDir = "public"
-
-# Remote
-#baseURL = "https://therkildsen-lab.github.io/galapagos_website/"
-#publishDir = "/public"
 
 [caches]
   [caches.images]
@@ -27,7 +23,7 @@ publishDir = "public"
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-disableKinds = ["taxonomy", "section"]
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 ## -----------------------------------------------
 ## Site Parameters
