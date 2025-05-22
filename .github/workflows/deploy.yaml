@@ -1,7 +1,8 @@
 on:
-  schedule:
-    - cron:  '0 7 * * 1,4'
-    # scheduled at 07:00 every Monday and Thursday
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
   workflow_dispatch:
     # to run manual builds
 
@@ -15,6 +16,7 @@ jobs:
       uses: peaceiris/actions-hugo@v4
       with:
         hugo-version: 'latest'
+        extended: true
     
     - name: Checkout repo on source_branch
       uses: actions/checkout@v3
